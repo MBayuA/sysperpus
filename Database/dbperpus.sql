@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Jul 15, 2018 at 04:22 
+-- Generation Time: Jul 15, 2018 at 05:27 
 -- Server version: 10.1.9-MariaDB
 -- PHP Version: 7.0.0
 
@@ -82,19 +82,6 @@ CREATE TABLE `tblpinjam` (
   `status` enum('Dibaca','Pending','Diterima') NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
---
--- Dumping data for table `tblpinjam`
---
-
-INSERT INTO `tblpinjam` (`id`, `kode`, `judul`, `nama`, `tanggal`, `status`) VALUES
-(1, 'KMK001', '#BeraniBeda - Juki untuk Indonesia Satu', 'Jane Doe', '2018-03-20', 'Diterima'),
-(2, 'NVL001', 'Paranoid', 'Jane Doe', '2018-03-20', 'Diterima'),
-(3, 'PMG002', 'Mahir dalam C#', 'Jane Doe', '2018-03-20', 'Diterima'),
-(4, 'KMK002', 'The Pitcher VOL,1', 'Melody Nurramdhani Laksani', '2018-03-20', 'Dibaca'),
-(5, 'KMK003', 'The Pitcher VOL.2', 'Melody Nurramdhani Laksani', '2018-03-20', 'Dibaca'),
-(6, 'NVL002', 'Psycopath Diary', 'Melody Nurramdhani Laksani', '2018-03-20', 'Diterima'),
-(7, 'NVL001', 'Paranoid', 'Melody Nurramdhani Laksani', '2018-03-20', 'Dibaca');
-
 -- --------------------------------------------------------
 
 --
@@ -133,11 +120,7 @@ CREATE TABLE `tbluser` (
 --
 
 INSERT INTO `tbluser` (`id`, `nama`, `username`, `password`, `email`, `lvl`, `pict`, `jenis_kelamin`, `status`) VALUES
-(1, 'Dimas Firmansyah', 'dimasfirmansyah', '$2y$10$oP5yDtukF2WJB4UVFvH8jOgqW6/mfXthy6dceoQvler1admg5wrVe', 'd9firmansyah@gmail.com', 'Admin', '5ab0ead693ab3.jpg', 'Laki-Laki', 'Active'),
-(4, 'Melody Nurramdhani Laksani', 'melodynl48', '$2y$10$t/7JUGYChkAX.AmJhybw..XE0KqjJR/u1FWRiaQaZOtfNSIWR5bbi', 'melody@jkt48.com', 'User', '5ab1068c7e689.jpg', 'Perempuan', 'Active'),
-(5, 'Sinka Juliani', 'sinkadudut', '$2y$10$EqDQat6ruqOq7f4EaD8DxOM2gR8Xj/Fiyew0qo4M0wcO1m938Pf/2', 'sinka@jkt48.com', 'Admin', '5ab1205bbdb3d.jpg', 'Perempuan', 'Active'),
-(6, 'John Doe', 'johndoe', '$2y$10$wvXiIwS7c2f5Abah9quA/uqVkquE2K2ORt63UA6xswJTYsMxbv6dK', 'john@doe.com', 'User', 'default.png', 'Laki-Laki', 'Active'),
-(7, 'Jane Doe', 'janedoe', '$2y$10$kPNBWLkLULDJeXiKgqNPBeq/lqB5mENBbKIgPbxjQzkwk4IAGKuCW', 'jane@doe.com', 'User', 'defaultwoman.png', 'Perempuan', 'Active');
+(8, 'Administrator', 'admin', '$2y$10$Yhf.Gwx6Z.LaKjk88t..6e2goaDyX8Y/XvZPFa2rthM5x.pEpXwKG', 'admin@admin.com', 'Admin', 'default.png', 'Laki-Laki', 'Active');
 
 --
 -- Indexes for dumped tables
@@ -202,7 +185,7 @@ ALTER TABLE `tblrequestkembali`
 -- AUTO_INCREMENT for table `tbluser`
 --
 ALTER TABLE `tbluser`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
